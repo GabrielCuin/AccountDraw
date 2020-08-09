@@ -28,11 +28,11 @@ namespace AccountDraw.Entities
         {
             if (amount > WithDrawLimit)
             {
-                throw new DomainExceptions("The amount exceeds withdraw limit");
+                throw new DomainException("The amount exceeds withdraw limit");
             }
             else if (amount > Balance)
             {
-                throw new DomainExceptions("Not enough balance.");
+                throw new DomainException("Not enough balance.");
             }
             Balance -= amount;
         }

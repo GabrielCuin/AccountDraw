@@ -4,9 +4,9 @@ using System.Text;
 
 namespace AccountDraw.Entities.Excepitions
 {
-    class DomainExceptions : ApplicationException
+    class DomainException : ApplicationException
     {
-        public DomainExceptions(string massage) : base(massage)
+        public DomainException(string massage) : base(massage)
         {
 
         }
